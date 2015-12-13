@@ -20,6 +20,7 @@ public class CartCamera : MonoBehaviour {
     {
         Vector3 position = gameObject.transform.position;
         theCamera.transform.position = position + cameraOffset;
+        //theCamera.transform.rotation = gameObject.transform.rotation;
         theGun.transform.rotation = theCamera.transform.rotation;
         theGun.transform.position = theCamera.transform.position + theCamera.transform.rotation * gunOffset;
         sidelight.transform.position = position + gameObject.transform.rotation * lightOffset;

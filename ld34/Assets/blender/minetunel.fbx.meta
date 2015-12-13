@@ -8,15 +8,87 @@ ModelImporter:
     100000: Cylinder
     100002: //RootNode
     100004: NurbsPath
+    100006: Cylinder_MeshPart0
+    100008: Cylinder_MeshPart1
+    100010: Cylinder_MeshPart2
+    100012: Cylinder_MeshPart3
+    100014: Cylinder_MeshPart4
+    100016: Cylinder_MeshPart10
+    100018: Cylinder_MeshPart11
+    100020: Cylinder_MeshPart12
+    100022: Cylinder_MeshPart5
+    100024: Cylinder_MeshPart6
+    100026: Cylinder_MeshPart7
+    100028: Cylinder_MeshPart8
+    100030: Cylinder_MeshPart9
+    100032: Cylinder_MeshPart13
+    100034: Point
     400000: Cylinder
     400002: //RootNode
     400004: NurbsPath
+    400006: Cylinder_MeshPart0
+    400008: Cylinder_MeshPart1
+    400010: Cylinder_MeshPart2
+    400012: Cylinder_MeshPart3
+    400014: Cylinder_MeshPart4
+    400016: Cylinder_MeshPart10
+    400018: Cylinder_MeshPart11
+    400020: Cylinder_MeshPart12
+    400022: Cylinder_MeshPart5
+    400024: Cylinder_MeshPart6
+    400026: Cylinder_MeshPart7
+    400028: Cylinder_MeshPart8
+    400030: Cylinder_MeshPart9
+    400032: Cylinder_MeshPart13
+    400034: Point
     2300000: Cylinder
     2300002: NurbsPath
+    2300004: Cylinder_MeshPart0
+    2300006: Cylinder_MeshPart1
+    2300008: Cylinder_MeshPart2
+    2300010: Cylinder_MeshPart3
+    2300012: Cylinder_MeshPart4
+    2300014: Cylinder_MeshPart10
+    2300016: Cylinder_MeshPart11
+    2300018: Cylinder_MeshPart12
+    2300020: Cylinder_MeshPart5
+    2300022: Cylinder_MeshPart6
+    2300024: Cylinder_MeshPart7
+    2300026: Cylinder_MeshPart8
+    2300028: Cylinder_MeshPart9
+    2300030: Cylinder_MeshPart13
     3300000: Cylinder
     3300002: NurbsPath
+    3300004: Cylinder_MeshPart0
+    3300006: Cylinder_MeshPart1
+    3300008: Cylinder_MeshPart2
+    3300010: Cylinder_MeshPart3
+    3300012: Cylinder_MeshPart4
+    3300014: Cylinder_MeshPart10
+    3300016: Cylinder_MeshPart11
+    3300018: Cylinder_MeshPart12
+    3300020: Cylinder_MeshPart5
+    3300022: Cylinder_MeshPart6
+    3300024: Cylinder_MeshPart7
+    3300026: Cylinder_MeshPart8
+    3300028: Cylinder_MeshPart9
+    3300030: Cylinder_MeshPart13
     4300000: NurbsPath
     4300002: Cylinder
+    4300004: Cylinder_MeshPart0
+    4300006: Cylinder_MeshPart1
+    4300008: Cylinder_MeshPart2
+    4300010: Cylinder_MeshPart3
+    4300012: Cylinder_MeshPart4
+    4300014: Cylinder_MeshPart5
+    4300016: Cylinder_MeshPart6
+    4300018: Cylinder_MeshPart7
+    4300020: Cylinder_MeshPart8
+    4300022: Cylinder_MeshPart9
+    4300024: Cylinder_MeshPart10
+    4300026: Cylinder_MeshPart11
+    4300028: Cylinder_MeshPart12
+    4300030: Cylinder_MeshPart13
   materials:
     importMaterials: 1
     materialName: 0

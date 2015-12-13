@@ -5,6 +5,7 @@ public class PlayerShoot : MonoBehaviour {
     private float lastShootTime;
     public float cooldownTime;
     public Camera firstPersonCamera;
+    public int numberClip;  
 
 	// Use this for initialization
 	void Start () {
