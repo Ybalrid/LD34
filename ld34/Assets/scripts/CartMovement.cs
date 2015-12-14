@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class CartMovement : MonoBehaviour {
 
@@ -9,7 +10,9 @@ public class CartMovement : MonoBehaviour {
     /// </summary>
     public float timeLengh;
     private float timeSinceStart;
+    private float timeSinceLastUpgrade;
     private float e;
+    public int upgradeLevel;
 
     private Quaternion startOrient;
     public Camera theCamera;
@@ -17,17 +20,28 @@ public class CartMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         timeSinceStart = 0;
+        timeSinceLastUpgrade = 0;
         e = 0.2f;
 
         startOrient = gameObject.transform.rotation;
+        upgradeLevel = 0;
 	}
+
+    void upgrade()
+    {
+        timeSinceLastUpgrade = timeSinceStart;
+        upgradeLevel++;
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        timeSinceStart += Time.deltaTime;
+        timeSinceStart += Time.deltaTime; 
         float tPosition = timeSinceStart / timeLengh;
         //clamp to 1 as max
         // if (tPosition > 1.0) tPosition = 1;
+
+        if (timeSinceStart - timeSinceLastUpgrade > 3)
+            upgrade();
 
         gameObject.transform.position = path.GetPositionByT(tPosition);
 
@@ -40,9 +54,9 @@ public class CartMovement : MonoBehaviour {
         direction = direction.normalized;
 
         float angle = Mathf.Acos(Vector3.Dot(forward, direction));
-        print("direction vector = " + direction);
+        /*print("direction vector = " + direction);
         print("Dot : " + Vector3.Dot(forward, direction));
-        print("Angle : " + angle + " Degree : " + RadianToDegree(angle));
+        print("Angle : " + angle + " Degree : " + RadianToDegree(angle));*/
         //Vector3 rotation = new Vector3(0, 0, RadianToDegree(angle));
         gameObject.transform.rotation = startOrient;
 
@@ -51,6 +65,13 @@ public class CartMovement : MonoBehaviour {
 
         gameObject.transform.Rotate(new Vector3(0, 0, RadianToDegree(angle)));
         //theCamera.transform.Rotate(new Vector3(0, RadianToDegree(angle), 0));
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        print("trigger enter");
+        SceneManager.LoadScene("end");
+       
     }
 
     private float RadianToDegree(float angle)

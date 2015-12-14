@@ -27,7 +27,7 @@ public class CameraControlln : MonoBehaviour {
         float x;
 
         x = theCamera.transform.rotation.eulerAngles.x;
-        print("camera x  : " + x);
+        //print("camera x  : " + x);
         //if (!(x < 270 && x > 90)) theCamera.transform.Rotate(+mouseY * rotation, 0, 0, Space.Self);
 
     }

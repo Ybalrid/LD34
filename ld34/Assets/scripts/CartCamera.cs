@@ -24,5 +24,6 @@ public class CartCamera : MonoBehaviour {
         theGun.transform.rotation = theCamera.transform.rotation;
         theGun.transform.position = theCamera.transform.position + theCamera.transform.rotation * gunOffset;
         sidelight.transform.position = position + gameObject.transform.rotation * lightOffset;
+        //print(PlayerShoot.score);
     }
 }
